@@ -27,14 +27,8 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/app/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta og:title={metadata.title} />
-        <meta og:description={metadata.description} />
-        <meta og:image="/og-image.png" />
-        <meta og:type="website" />
-        <meta og:url="https://suren-site.vercel.app" />
+
         <meta name="keywords" content={metadata.keywords} />
-
-
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
