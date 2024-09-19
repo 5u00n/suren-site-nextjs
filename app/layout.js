@@ -27,6 +27,11 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/app/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
+        <meta name="author" content="Suren Hembram" />
+        <meta name="robots" content="index, follow" />
+        <meta name="google-site-verification" content="v7fSZGeFLbxk3-i3tStvF-BeDH0FSwK_GPcJTVu5NuM" />
+
+        
 
         <meta name="keywords" content={metadata.keywords} />
       </head>
