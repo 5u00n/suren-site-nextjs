@@ -9,7 +9,7 @@ export default function Home() {
 
         </h1>
 
-        <h1 className="text-4xl font-bold text-center sm:text-left w-full">
+        <h1 className="text-4xl font-bold text-center w-full">
           Full App arriving soon!
         </h1>
       </main>
