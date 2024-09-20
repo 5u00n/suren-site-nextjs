@@ -10,11 +10,17 @@
     "deploy": "next build && firebase deploy --only hosting"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
     "firebase-frameworks": "^0.11.4",
+    "framer-motion": "^11.5.5",
+    "lucide-react": "^0.441.0",
     "next": "^14.2.12",
     "react": "^18",
     "react-dom": "^18",
-    "suren-site-nextjs": "file:"
+    "suren-site-nextjs": "file:",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "eslint": "^8",
