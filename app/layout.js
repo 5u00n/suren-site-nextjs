@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 
 export const metadata = {
-  title: "Suren Portfolio",
+  title: "Suren Hembram Portfolio",
   description: "Suren Hembram Portfolio Website for Software Development on Full Stack Web Development, React, Next.js, Node.js, and more.",
   keywords: "Suren Hembram, Full Stack Web Development, React, Next.js, Node.js, Software Development, Web Development, JavaScript",
 };
