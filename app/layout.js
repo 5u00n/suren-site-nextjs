@@ -4,16 +4,7 @@ import "./globals.css";
 import Headers from "./components/Headers";
 import Footer from "./components/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 
 export const metadata = {
   title: "Suren Portfolio",
@@ -35,7 +26,7 @@ export default function RootLayout({ children }) {
         <meta name="google-site-verification" content="v7fSZGeFLbxk3-i3tStvF-BeDH0FSwK_GPcJTVu5NuM" />
         <meta name="keywords" content={metadata.keywords} />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+      <body className={`antialiased min-h-screen flex flex-col font-gloock`}>
         <Headers />
         <div className="container mx-auto px-4 flex-grow">
           {children}

@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import the Unica One font */
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
+/* Define font classes */
+.font-figtree {
+  font-family: "Figtree", sans-serif;
+}
+
+.font-gloock {
+  font-family: "Gloock", serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.font-unica-one {
+  font-family: "Unica One", sans-serif;
+
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,7 +38,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Figtree", "Gloock", "Inter", "Unica One", sans-serif;
 }
 
 @layer utilities {

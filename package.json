@@ -10,6 +10,7 @@
     "deploy": "next build && firebase deploy --only hosting"
   },
   "dependencies": {
+    "@radix-ui/react-navigation-menu": "^1.2.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "firebase-frameworks": "^0.11.4",
