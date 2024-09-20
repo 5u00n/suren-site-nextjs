@@ -25,6 +25,10 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="v7fSZGeFLbxk3-i3tStvF-BeDH0FSwK_GPcJTVu5NuM" />
         <meta name="keywords" content={metadata.keywords} />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet" />
+
       </head>
       <body className={`antialiased min-h-screen flex flex-col font-gloock`}>
         <Headers />
