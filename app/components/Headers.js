@@ -1,12 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Unica_One } from 'next/font/google';
+
+const unica_one = Unica_One({
+  display: 'swap',
+  weight: '400',
+  preload: false,
+});
 function Headers() {
   return (
     <header className=" my-4 mx-auto px-4 lg:mx-16">
       <nav className="flex items-center justify-between py-4">
-        <Link href="/" className="text-2xl font-bold font-unica">
-          SHembram
+        <Link href="/" className={`${unica_one.className} text-2xl font-bold `}>
+          SH
         </Link>
         <ul className="flex space-x-16 items-center font-figtree">
           <li>
