@@ -10,7 +10,7 @@ const unica_one = Unica_One({
 });
 function Headers() {
   return (
-    <header className="md:mt-10 sm:px-5 lg:px-16 w-screen lg:fixed md:fixed ">
+    <header className="md:mt-10 sm:px-5 lg:px-16 w-screen  z-50 ">
       <nav className="flex items-center justify-between mx-auto  ">
         <Link href="/" className={`${unica_one.className} text-[38px] font-bold `}>
           SH
