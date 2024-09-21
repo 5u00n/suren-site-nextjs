@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full h-3/6 flex gap-8 my-8">
-          <div className="w-1/6 h-full">
+          <div className=" h-full min-w-[220px]">
             <Image src="/images/suren.jpg" alt="Suren Hembram" width={140} height={140} className=" content-end" />
             <h5 className="text-[25px] font-bold w-full font-gloock mb-4 ">
               Suren Hembram
@@ -43,7 +43,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="w-5/6 h-full flex flex-col ">
+          <div className=" h-full flex flex-col ">
             <h2 className="text-[48px] font-bold w-full font-gloock mb-4">
               About
             </h2>
