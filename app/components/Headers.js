@@ -10,12 +10,12 @@ const unica_one = Unica_One({
 });
 function Headers() {
   return (
-    <header className=" my-4 mx-auto px-4 lg:mx-16">
-      <nav className="flex items-center justify-between py-4">
-        <Link href="/" className={`${unica_one.className} text-2xl font-bold `}>
+    <header className="md:mt-10 sm:px-5 lg:px-16 w-screen lg:fixed md:fixed ">
+      <nav className="flex items-center justify-between mx-auto  ">
+        <Link href="/" className={`${unica_one.className} text-[38px] font-bold `}>
           SH
         </Link>
-        <ul className="flex space-x-16 items-center font-figtree">
+        <ul className="flex space-x-[40px] items-center font-figtree">
           <li>
             <Link href="/">
               Portfolio

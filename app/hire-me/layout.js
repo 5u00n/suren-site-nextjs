@@ -1,11 +1,11 @@
 import React from 'react'
 
-function JoinMeLayout({children}) {
+function HireMeLayout({children}) {
   return (
     <div className="container mx-auto px-4 flex-grow">
-    {children}
-  </div>
+          {children}
+        </div>
   )
 }
 
-export default JoinMeLayout;
+export default HireMeLayout

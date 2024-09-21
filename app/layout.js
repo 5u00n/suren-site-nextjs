@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`antialiased min-h-screen flex flex-col font-gloock`}>
         <Headers />
-        <div className="container mx-auto px-4 flex-grow">
+        <div className="container min-w-full flex-grow">
           {children}
         </div>
         <Footer />
