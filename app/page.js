@@ -7,19 +7,19 @@ export default function Home() {
 
   const words = `To Code, To Solve, To Contribute`;
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start md:px-16 sm:px-5">
+    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start md:px-16 sm:px-5 xs:px-5">
 
       <hero className="h-[700px] w-full ">
 
         <BackgroundBeams />
 
-        <div className=" w-full h-3/6 flex justify-between ">
-          <div className="flex flex-col justify-center w-3/5 text-[32px] sm:text-[48px] md:text-[64px] lg:text-[68px] xl:text-[80px]">
+        <div className=" w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row ">
+          <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px]  xs:text-[48px]  md:text-[64px] lg:text-[68px] xl:text-[80px]">
             <TextGenerateEffect duration={2} filter={false} words={`To Code,`} className={"m-0 p-0 border-none"} />
             <TextGenerateEffect duration={4} filter={false} words={`To Solve Problem,`} />
             <TextGenerateEffect duration={6} filter={false} words={`To Contribute`} />
           </div>
-          <div className="flex items-center justify-center w-2/5">
+          <div className="md:flex items-center justify-center w-2/5 sm:hidden xs:hidden ">
             <Image
               src="/images/hero-image.png"
               alt="Hero"
@@ -28,13 +28,13 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="w-full h-3/6 flex gap-8 my-8">
-          <div className=" h-full min-w-[220px]">
-            <Image src="/images/suren.jpg" alt="Suren Hembram" width={140} height={140} className=" content-end" />
-            <h5 className="text-[25px] font-bold w-full font-gloock mb-4 ">
+        <div className=" h-3/6 xs:h-4/6 flex md:flex-row xs:flex-col gap-8 my-8 w-full ">
+          <div className="flex flex-col h-full min-w-[220px] xs:items-center ">
+            <Image src="/images/suren.jpg" alt="Suren Hembram" width={140} height={140} className=" content-end rounded-full " />
+            <h5 className="text-[25px] font-bold w-full font-gloock mb-4 xs:text-center ">
               Suren Hembram
             </h5>
-            <div className="flex items-center mx-auto w-full ">
+            <div className="mx-auto xs:w-80% ">
               <button className="bg-[#458a4e] hover:bg-[#185c20] text-white font-bold py-2 px-4 rounded">
                 Hire Me
               </button>
@@ -54,11 +54,11 @@ export default function Home() {
               <b><u> Cloud Computing</u></b>.
             </p>
             <hr className="w-full border-1 border-white mb-2" />
-            <div className="flex items-center justify-between mx-auto w-full mb-2">
+            <div className="flex xs:flex-col lg:flex-row items-center justify-between mx-auto w-full mb-2">
               <h2 className="text-[16px] font-bold font-inter">
                 Software Engineer
               </h2>
-              <ul className="flex space-x-[40px] items-center font-figtree">
+              <ul className="flex space-x-[40px] items-center font-figtree xs:flex-col xs:hidden md:hidden lg:flex lg:flex-row">
                 <li>
                   <Link href="#projects-section">
                     Projects

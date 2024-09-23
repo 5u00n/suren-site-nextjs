@@ -67,19 +67,27 @@ module.exports = {
 				unica: ['Unica One', 'sans-serif'],
 				figtree: ['Figtree', 'sans-serif'],
 			},
+			screens: {
+				'xs': '320px',
+				'sm': '640px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1280px',
+				'2xl': '1536px',
+			},
 
 		}
 	},
-	plugins: [require("tailwindcss-animate"),addVariablesForColors],
+	plugins: [require("tailwindcss-animate"), addVariablesForColors],
 };
 
 function addVariablesForColors({ addBase, theme }) {
 	let allColors = flattenColorPalette(theme("colors"));
 	let newVars = Object.fromEntries(
-	  Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+		Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
 	);
-   
+
 	addBase({
-	  ":root": newVars,
+		":root": newVars,
 	});
-  }
+}
