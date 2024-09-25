@@ -1,8 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-import Headers from "./components/Headers";
 import Footer from "./components/Footer";
+import Navbar from "./components/NavBar";
 
 
 
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <meta name="keywords" content={metadata.keywords} />
       </head>
       <body className={`antialiased min-h-screen flex flex-col font-gloock`}>
-        <Headers />
+        <Navbar />
         <div className="container min-w-full flex-grow">
           {children}
         </div>
