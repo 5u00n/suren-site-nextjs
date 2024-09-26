@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start md:px-16 sm:px-5 xs:px-5 ">
 
-      <hero className="h-[700px] w-full  dark:bg-black">
+      <hero className="lg:h-[700px] xl:h-screen w-full  dark:bg-black">
 
-        <BackgroundBeams className="h-full" />
+        <BackgroundBeams className="" />
 
-        <div className=" w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row ">
-          <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px]  xs:text-[48px]  md:text-[64px] lg:text-[68px] xl:text-[80px]">
+        <div className=" w-full xl:h-3/6 lg:h-2/6 md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row ">
+          <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px]  xs:text-[48px]  md:text-[64px] lg:text-[64px] xl:text-[80px]">
             <TextGenerateEffect duration={2} filter={false} words={`To Code,`} className={"m-0 p-0 border-none"} />
             <TextGenerateEffect duration={2} filter={false} words={`To Solve Problem,`} />
             <TextGenerateEffect duration={2} filter={false} words={`To Contribute`} />
@@ -23,12 +23,13 @@ export default function Home() {
             <Image
               src="/images/hero-image.png"
               alt="Hero"
+              layout="responsive"
               width={750}
               height={750}
             />
           </div>
         </div>
-        <div className=" h-3/6 xs:h-4/6 flex md:flex-row xs:flex-col gap-8 my-8 w-full">
+        <div className=" lg:h-4/6 xs:h-4/6 flex md:flex-row xs:flex-col gap-8 my-8 w-full xl:mt-24">
           <div className="flex flex-col h-full min-w-[220px] xs:items-center ">
             <Image src="/images/suren.jpg" alt="Suren Hembram" width={140} height={140} className=" content-end rounded-full " />
             <h5 className="text-[25px] font-bold w-full font-gloock mb-4 xs:text-center ">
