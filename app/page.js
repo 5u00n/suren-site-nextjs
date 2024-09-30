@@ -4,17 +4,12 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Link from "next/link";
 
 export default function Home() {
-
-  const words = `To Code, To Solve, To Contribute`;
   return (
-    <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start md:px-16 sm:px-5 xs:px-5 ">
-
-      <hero className="lg:h-[700px] xl:h-screen w-full  dark:bg-black">
-
-        <BackgroundBeams className="h-full" />
-
-        <div className=" w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row ">
-          <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px]  xs:text-[48px]  md:text-[64px] lg:text-[68px] ">
+    <main className="top-0 start-0 flex flex-col gap-8 row-start-2 items-center sm:items-start">
+      <hero className="relative h-[700px]  w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
+        <BackgroundBeams className="absolute inset-0 h-full w-full" />
+        <div className="relative w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row z-20">
+          <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px]  xs:text-[48px] md:text-[64px] lg:text-[68px] font-gloock font-bold ">
             <TextGenerateEffect duration={2} filter={false} words={`To Code,`} className={"m-0 p-0 border-none"} />
             <TextGenerateEffect duration={2} filter={false} words={`To Solve Problem,`} />
             <TextGenerateEffect duration={2} filter={false} words={`To Contribute`} />
@@ -23,19 +18,19 @@ export default function Home() {
             <Image
               src="/images/hero-image.png"
               alt="Hero"
-              layout="responsive"
               width={750}
               height={750}
+
             />
           </div>
         </div>
-        <div className=" h-3/6 xs:h-4/6 flex md:flex-row xs:flex-col gap-8 my-8 w-full">
+        <div className="relative h-3/6 xs:h-4/6 flex md:flex-row xs:flex-col gap-8 my-2 w-full">
           <div className="flex flex-col h-full min-w-[220px] xs:items-center ">
             <Image src="/images/suren.jpg" alt="Suren Hembram" width={140} height={140} className=" content-end rounded-full " />
             <h5 className="text-[25px] font-bold w-full font-gloock mb-4 xs:text-center ">
               Suren Hembram
             </h5>
-            <div className="mx-auto xs:w-80% ">
+            <div className="mx-auto xs:w-80% font-figtree text-sm">
               <button className="bg-[#458a4e] hover:bg-[#185c20] text-white font-bold py-2 px-4 rounded">
                 Hire Me
               </button>
@@ -108,7 +103,10 @@ export default function Home() {
         </div>
       </hero>
 
-      <section id="projects-section" className="w-full h-full flex flex-col gap-8">
+      <section id="skills-section" className="w-full h-full flex flex-col gap-8 md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9  ">
+      </section>
+
+      <section id="projects-section" className="w-full h-full flex flex-col gap-8  ">
         <h2 className="text-[48px] font-bold w-full font-gloock mb-4">
           Projects
         </h2>
