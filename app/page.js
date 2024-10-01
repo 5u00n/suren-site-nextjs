@@ -2,10 +2,11 @@ import Image from "next/image";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Link from "next/link";
+import { ProjectsLayoutGrid } from "./components/UI/ProjectsLayoutGrid";
 
 export default function Home() {
   return (
-    <main className="top-0 start-0 flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <main className="top-0 start-0 flex flex-col row-start-2 items-center sm:items-start">
       <hero className="relative h-[700px]  w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
         <BackgroundBeams className="absolute inset-0 h-full w-full" />
         <div className="relative w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row z-20">
@@ -151,42 +152,20 @@ export default function Home() {
 
       </section>
 
-      <section id="projects-section" className="w-full h-full flex flex-col gap-8  ">
-        <h2 className="text-[48px] font-bold w-full font-gloock mb-4">
-          Projects
-        </h2>
-        <div className="w-full h-full flex flex-col gap-8">
-          <div className="w-full h-full flex flex-col gap-8">
-            <h3 className="text-[32px] font-bold w-full font-gloock mb-4">
-              Project 1
-            </h3>
-            <p className="text-[20px] w-full font-inter mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec purus ut purus ultricies aliquam. Nullam nec purus ut purus
-              ultricies aliquam. Nullam nec purus ut purus ultricies aliquam.
-            </p>
-          </div>
-          <div className="w-full h-full flex flex-col gap-8">
-            <h3 className="text-[32px] font-bold w-full font-gloock mb-4">
-              Project 2
-            </h3>
-            <p className="text-[20px] w-full font-inter mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec purus ut purus ultricies aliquam. Nullam nec purus ut purus
-              ultricies aliquam. Nullam nec purus ut purus ultricies aliquam.
-            </p>
-          </div>
-          <div className="w-full h-full flex flex-col gap-8">
-            <h3 className="text-[32px] font-bold w-full font-gloock mb-4">
-              Project 3
-            </h3>
-            <p className="text-[20px] w-full font-inter mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              nec purus ut purus ultricies aliquam. Nullam nec purus ut purus
-              ultricies aliquam. Nullam nec purus ut purus ultricies aliquam.
-            </p>
-          </div>
+      <section id="projects-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
+        <div className="w-full h-full flex gap-8">
+          <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
+            Projects Showcase
+          </h2>
+          <span className="mb-4 min-w-[90px] flex items-center">
+            <Link href="/projects" className="block bg-transparent border-2 hover:bg-[#185c20] font-bold py-2 px-4 rounded font-figtree text-sm">
+              View All
+            </Link>
+          </span>
         </div>
+
+        <ProjectsLayoutGrid />
+
       </section>
 
 
