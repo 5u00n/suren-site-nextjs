@@ -6,7 +6,7 @@ import { ProjectsLayoutGrid } from "./components/UI/ProjectsLayoutGrid";
 
 export default function Home() {
   return (
-    <main className="top-0 start-0 flex flex-col row-start-2 items-center sm:items-start">
+    <main className="top-0 start-0 flex flex-col row-start-2 items-center sm:items-start max-w-[1280px] mx-auto">
       <hero className="relative h-[700px]  w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
         <BackgroundBeams className="absolute inset-0 h-full w-full" />
         <div className="relative w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row z-20">
@@ -107,8 +107,8 @@ export default function Home() {
         </div>
       </hero>
 
-      <section id="skills-section" className="w-full h-full flex flex-col gap-8 md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-3">
-        <ul className="h-full flex mx-auto gap-8 w-[90%]">
+      <section id="skills-section" className="h-full flex flex-col gap-8 md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto">
+        <ul className="h-full flex mx-auto gap-8 w-full lg:min-w-[1280px]">
           <li className="w-full h-full flex flex-col">
             <h2 className=" text-heading3 font-bold w-full font-figtree">
               22+
