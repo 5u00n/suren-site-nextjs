@@ -3,6 +3,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Link from "next/link";
 import { ProjectsLayoutGrid } from "./components/UI/ProjectsLayoutGrid";
+import { SkillsLayoutGrid } from "./components/UI/SkillsLayoutGrid";
 
 export default function Home() {
   return (
@@ -107,8 +108,8 @@ export default function Home() {
         </div>
       </hero>
 
-      <section id="skills-section" className="h-full flex flex-col gap-8 md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto">
-        <ul className="h-full flex mx-auto gap-8 w-full lg:min-w-[1280px]">
+      <section id="projects-section" className="h-full flex flex-col gap-8 md:px-10 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto">
+        <ul className="h-full flex flex-row mx-auto w-full xl:min-w-[1280px] md:w-screen">
           <li className="w-full h-full flex flex-col">
             <h2 className=" text-heading3 font-bold w-full font-figtree">
               22+
@@ -170,11 +171,11 @@ export default function Home() {
         <ProjectsLayoutGrid />
 
         <div className="w-full h-full mt-20">
-          <h2 className="font-bold w-full font-gloock mb-4 text-heading2">
+          <h2 className="font-bold w-full font-figtree mb-4 text-heading2">
             Curious Questions ?
           </h2>
 
-          <div class="grid grid-cols-2 gap-4 mt-8">
+          <div className="grid grid-cols-2 gap-8 mt-8">
             <div>
               <h4 className="font-bold text-heading4">Which language do you program with?</h4>
               <p className="text-body">Coming from C++ , Java background, and mastering projects on JavaScript, Python, PHP, .NET. I{'’'}ve got it all covered. </p>
@@ -191,6 +192,122 @@ export default function Home() {
               <h4 className="font-bold text-heading4">Any tips for programming beginners ?</h4>
               <p className="text-body">Practice, practice , practice! treat it like driving and sports. Oh did I mention practice? </p>
             </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="skills-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-16 ">
+        <div className="w-full h-full flex gap-8">
+          <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
+            Skills & Services
+          </h2>
+          <span className="mb-4 min-w-[90px] flex items-center">
+            <Link href="/services" className="block bg-transparent border-2 hover:bg-[#185c20] font-bold py-2 px-4 rounded font-figtree text-sm">
+              View All
+            </Link>
+          </span>
+        </div>
+
+        <div className="w-full h-full mt-8 flex flex-row">
+          <div className="w-1/2">
+            <SkillsLayoutGrid />
+          </div>
+          <div className="flex flex-col mt-3 w-1/2">
+            <h3 className="font-bold text-heading3">IT Engineer to the Core</h3>
+            <ul className="flex flex-col gap-4 mt-4 text-sm font-inter">
+              <li>
+                <span className="font-bold text-heading4">Full-stack Development - </span>
+                <span className="text-body ml-4">Web, Mobile, Desktop Apps</span>
+              </li>
+              <li>
+                <span className="font-bold text-heading4">Cloud Computing - </span>
+                <span className="text-body ml-4">AWS, Azure, Google Cloud</span>
+              </li>
+              <li>
+                <span className="font-bold text-heading4">Database Management - </span>
+                <span className="text-body ml-4">MySQL, MongoDB, PostgreSQL</span>
+              </li>
+              <li>
+                <span className="font-bold text-heading4">DevOps - </span>
+                <span className="text-body ml-4">Docker, Kubernetes, Jenkins</span>
+              </li>
+              <li>
+                <span className="font-bold text-heading4">Programming Languages - </span>
+                <span className="text-body ml-4">JavaScript, Python, PHP, .NET</span>
+              </li>
+
+              <li>
+                <span className="font-bold text-heading4">UI/UX Design - </span>
+                <span className="text-body ml-4">Figma, Adobe XD, Sketch</span>
+              </li>
+
+              <li>
+                <span className="font-bold text-heading4">Agile Methodologies - </span>
+                <span className="text-body ml-4">Scrum, Kanban, Lean</span>
+              </li>
+
+              <li>
+                <span className="font-bold text-heading4">Version Control - </span>
+                <span className="text-body ml-4">Git, GitHub, Bitbucket</span>
+              </li>
+
+              <li>
+                <span className="font-bold text-heading4">Project Management - </span>
+                <span className="text-body ml-4">Jira, Trello, Asana</span>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+
+        <div className="w-full h-full mt-20">
+          <h2 className="font-bold w-full mb-4 text-heading2 font-figtree">
+            Mastery Across Platforms
+          </h2>
+
+          <div className="grid grid-cols-3 gap-8 mt-8 font-inter">
+            <div>
+              <h4 className="font-bold text-heading4">Web Wizard</h4>
+              <p className="text-body">Crafting compelling websites that weave a tale through HTML, CSS, and JavaScript, and server side like PHP</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">Mobile Maestro</h4>
+              <p className="text-body">Building robust mobile applications making the world accessible from your palm.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">.NET Ninja</h4>
+              <p className="text-body">Unleashing the power of .NET for desktop and Web applications that turn tables.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">Python Powerhouse</h4>
+              <p className="text-body">Harnessing the beast of Python for server-side wizardry and data sorcery.</p>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-heading4">Cloud Commander</h4>
+              <p className="text-body">Navigating the cloud with AWS, Azure, and Google Cloud to host and manage your applications.</p>
+              </div>
+            <div>
+
+              <h4 className="font-bold text-heading4">Database Dynamo</h4>
+              <p className="text-body">Designing and managing databases with MySQL, MongoDB, and PostgreSQL for your data needs.</p>
+              </div>
+
+              <div>
+              <h4 className="font-bold text-heading4">DevOps Doer</h4>
+              <p className="text-body">Automating and streamlining the development process with Docker, Kubernetes, and Jenkins.</p>
+              </div>
+              <div>
+              <h4 className="font-bold text-heading4">UI/UX Designer</h4>
+              <p className="text-body">Crafting delightful user experiences with Figma, Adobe XD, and Sketch for your applications.</p>
+              </div>
+
+              <div>
+              <h4 className="font-bold text-heading4">Agile Advocate</h4>
+              <p className="text-body">Embracing Agile methodologies like Scrum, Kanban, and Lean to deliver projects efficiently.</p>
+              </div>
           </div>
         </div>
 
