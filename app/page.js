@@ -15,14 +15,17 @@ export default function Home() {
             <TextGenerateEffect duration={2} filter={false} words={`To Solve Problem,`} />
             <TextGenerateEffect duration={2} filter={false} words={`To Contribute`} />
           </div>
-          <div className="md:flex items-center justify-center w-2/5 sm:hidden xs:hidden ">
-            <Image
-              src="/images/hero-image.png"
-              alt="Hero"
-              width={750}
-              height={750}
-
-            />
+          <div className="flex items-center justify-center h-full sm:hidden xs:hidden md:flex w-2/5 ">
+            <div className=" items-center justify-center h-full flex">
+              <Image
+                src="/images/hero-image.png"
+                alt="Hero"
+                layout="responsive"
+                width={800}
+                height={800}
+                className="rounded-2xl"
+              />
+            </div>
           </div>
         </div>
         <div className="relative h-3/6 xs:h-4/6 flex md:flex-row xs:flex-col gap-8 my-2 w-full">
@@ -166,9 +169,32 @@ export default function Home() {
 
         <ProjectsLayoutGrid />
 
+        <div className="w-full h-full mt-20">
+          <h2 className="font-bold w-full font-gloock mb-4 text-heading2">
+            Curious Questions ?
+          </h2>
+
+          <div class="grid grid-cols-2 gap-4 mt-8">
+            <div>
+              <h4 className="font-bold text-heading4">Which language do you program with?</h4>
+              <p className="text-body">Coming from C++ , Java background, and mastering projects on JavaScript, Python, PHP, .NET. I{'’'}ve got it all covered. </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">Which language do you program with?</h4>
+              <p className="text-body">Just Tap the “Contact Me” button above or click Contact Me here.Super Easy! </p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">Do you work on freelancing projects?</h4>
+              <p className="text-body">Absolutely! I am here to solve the program you need. There’s nothing more exciting than a new challenging project!</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">Any tips for programming beginners ?</h4>
+              <p className="text-body">Practice, practice , practice! treat it like driving and sports. Oh did I mention practice? </p>
+            </div>
+          </div>
+        </div>
+
       </section>
-
-
 
     </main>
   );
