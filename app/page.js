@@ -103,7 +103,52 @@ export default function Home() {
         </div>
       </hero>
 
-      <section id="skills-section" className="w-full h-full flex flex-col gap-8 md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9  ">
+      <section id="skills-section" className="w-full h-full flex flex-col gap-8 md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-3">
+        <ul className="h-full flex mx-auto gap-8 w-[90%]">
+          <li className="w-full h-full flex flex-col">
+            <h2 className=" text-heading3 font-bold w-full font-figtree">
+              22+
+            </h2>
+            <span>
+              <h3 className=" w-full font-inter text-body">
+                Amazing Projects
+              </h3>
+            </span>
+          </li>
+          <li className="w-full h-full flex flex-col">
+            <h2 className=" text-heading3 font-bold w-full font-figtree">
+              10+
+            </h2>
+            <span>
+              <h3 className=" w-full font-inter text-body">
+                Happy Clients
+              </h3>
+            </span>
+          </li>
+          <li className="w-full h-full flex flex-col">
+            <h2 className=" text-heading3 font-bold w-full font-figtree">
+              10+
+            </h2>
+            <span>
+              <h3 className=" w-full font-inter text-body">
+                Awards
+              </h3>
+            </span>
+          </li>
+          <li className="w-full h-full flex flex-col">
+            <h2 className=" text-heading3 font-bold w-full font-figtree">
+              5+
+            </h2>
+            <span>
+              <h3 className=" w-full font-inter text-body">
+                Years Experience
+              </h3>
+            </span>
+          </li>
+
+        </ul>
+
+
       </section>
 
       <section id="projects-section" className="w-full h-full flex flex-col gap-8  ">

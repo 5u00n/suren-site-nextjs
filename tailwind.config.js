@@ -67,6 +67,15 @@ module.exports = {
 				unica: ['Unica One', 'sans-serif'],
 				figtree: ['Figtree', 'sans-serif'],
 			},
+			fontSize: {
+				body: '1rem',
+				heading1: '3rem',
+				heading2: '2.375rem',
+				heading3: '2rem',
+				heading4: '1.25rem',
+				heading5: '1.125rem',
+				title: '5rem',
+			},
 			screens: {
 				'xs': '320px',
 				'sm': '640px',
