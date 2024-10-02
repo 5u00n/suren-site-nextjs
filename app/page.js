@@ -109,7 +109,7 @@ export default function Home() {
       </hero>
 
       <section id="projects-section" className=" flex flex-col gap-8 md:px-10 sm:px-5 xs:px-10 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto xs:w-screen">
-      <ul className="h-full grid grid-cols-2 gap-4 mx-auto w-full xl:min-w-[1280px] md:w-screen md:grid-cols-4 ">
+        <ul className="h-full grid grid-cols-2 gap-4 mx-auto w-full xl:min-w-[1280px] md:w-screen md:grid-cols-4 ">
           <li className="w-full h-full flex flex-col">
             <h2 className=" text-heading3 font-bold w-full font-figtree">
               22+
@@ -156,8 +156,8 @@ export default function Home() {
 
       </section>
 
-      
-       <section id="projects-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
+
+      <section id="projects-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
         <div className="w-full h-full flex gap-8">
           <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
             Projects Showcase
@@ -183,7 +183,7 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-bold text-heading4">Which language do you program with?</h4>
-              <p className="text-body">Just Tap the “Contact Me” button above or click Contact Me here.Super Easy! </p>
+              <p className="text-body">Just Tap the “Contact Me” button above or click <Link href="#contact-section" className="text-blue-400 underline">Contact Me</Link> here.Super Easy! </p>
             </div>
             <div>
               <h4 className="font-bold text-heading4">Do you work on freelancing projects?</h4>
@@ -212,7 +212,7 @@ export default function Home() {
 
         <div className="w-full h-full mt-8 flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
-          <SkillsLayoutGrid />
+            <SkillsLayoutGrid />
           </div>
           <div className="flex flex-col mt-3 w-full  md:w-1/2">
             <h3 className="font-bold text-heading3">IT Engineer to the Core</h3>
@@ -298,26 +298,26 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-heading4">Cloud Commander</h4>
               <p className="text-body">Navigating the cloud with AWS, Azure, and Google Cloud to host and manage your applications.</p>
-              </div>
+            </div>
             <div>
 
               <h4 className="font-bold text-heading4">Database Dynamo</h4>
               <p className="text-body">Designing and managing databases with MySQL, MongoDB, and PostgreSQL for your data needs.</p>
-              </div>
+            </div>
 
-              <div>
+            <div>
               <h4 className="font-bold text-heading4">DevOps Doer</h4>
               <p className="text-body">Automating and streamlining the development process with Docker, Kubernetes, and Jenkins.</p>
-              </div>
-              <div>
+            </div>
+            <div>
               <h4 className="font-bold text-heading4">UI/UX Designer</h4>
               <p className="text-body">Crafting delightful user experiences with Figma, Adobe XD, and Sketch for your applications.</p>
-              </div>
+            </div>
 
-              <div>
+            <div>
               <h4 className="font-bold text-heading4">Agile Advocate</h4>
               <p className="text-body">Embracing Agile methodologies like Scrum, Kanban, and Lean to deliver projects efficiently.</p>
-              </div>
+            </div>
           </div>
         </div>
 
@@ -328,48 +328,36 @@ export default function Home() {
           <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
             Education
           </h2>
-          
+
         </div>
 
         <div className="w-full h-full mt-8 flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
-            <h3 className="font-bold text-heading3">Bachelor of Technology</h3>
-            <p className="text-body">Computer Science Engineering</p>
-            <p className="text-body">2015 - 2019</p>
-            <p className="text-body">KIIT University, Bhubaneswar</p>
+            <h3 className="font-bold text-heading3">Masters in Computer Application</h3>
+            <p className="text-body">Computer Application</p>
+            <p className="text-body">2021 - 2022</p>
+            <p className="text-body underline text-blue-400"><Link href={"https://mitwpu.edu.in"}>MIT World Peace University, Pune, India</Link></p>
           </div>
           <div className="w-full md:w-1/2">
-            <h3 className="font-bold text-heading3">Higher Secondary</h3>
-            <p className="text-body">Science</p>
-            <p className="text-body">2013 - 2015</p>
-            <p className="text-body">Kendriya Vidyalaya, Rourkela</p>
+            <h3 className="font-bold text-heading3">Bachelors in Computer Application</h3>
+            <p className="text-body">Computer Application</p>
+            <p className="text-body">2017 - 2020</p>
+            <p className="text-body underline text-blue-400"><Link href={"https://ssau.edu.in"}>Spicer Adventist University, Pune, India</Link></p>
           </div>
         </div>
 
         <div className="w-full h-full mt-20">
           <h3 className="font-bold text-heading3">Works and Awards</h3>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 font-inter">
-            <div>
-              <h4 className="font-bold text-heading4">Best Project</h4>
-              <p className="text-body">Awarded for the best project in the final year of graduation.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-heading4">Best Student</h4>
-              <p className="text-body">Awarded for the best student in the final year of graduation.</p>
-            </div>
-            <div>
-              <h4 className="font-bold text-heading4">Best Intern</h4>
-              <p className="text-body">Awarded for the best intern in the final year of graduation.</p>
-            </div>
           </div>
         </div>
       </section>
 
-     
 
-     
-      
+
+
+
 
     </main>
   );
