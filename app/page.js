@@ -323,6 +323,49 @@ export default function Home() {
 
       </section>
 
+      <section id="education-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
+        <div className="w-full h-full gap-8 flex">
+          <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
+            Education
+          </h2>
+          
+        </div>
+
+        <div className="w-full h-full mt-8 flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2">
+            <h3 className="font-bold text-heading3">Bachelor of Technology</h3>
+            <p className="text-body">Computer Science Engineering</p>
+            <p className="text-body">2015 - 2019</p>
+            <p className="text-body">KIIT University, Bhubaneswar</p>
+          </div>
+          <div className="w-full md:w-1/2">
+            <h3 className="font-bold text-heading3">Higher Secondary</h3>
+            <p className="text-body">Science</p>
+            <p className="text-body">2013 - 2015</p>
+            <p className="text-body">Kendriya Vidyalaya, Rourkela</p>
+          </div>
+        </div>
+
+        <div className="w-full h-full mt-20">
+          <h3 className="font-bold text-heading3">Works and Awards</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 font-inter">
+            <div>
+              <h4 className="font-bold text-heading4">Best Project</h4>
+              <p className="text-body">Awarded for the best project in the final year of graduation.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">Best Student</h4>
+              <p className="text-body">Awarded for the best student in the final year of graduation.</p>
+            </div>
+            <div>
+              <h4 className="font-bold text-heading4">Best Intern</h4>
+              <p className="text-body">Awarded for the best intern in the final year of graduation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
      
 
      
