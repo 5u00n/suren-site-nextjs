@@ -8,6 +8,7 @@ import { SkillsLayoutGrid } from "./components/UI/SkillsLayoutGrid";
 export default function Home() {
   return (
     <main className="top-0 start-0 flex flex-col items-center sm:items-start lg:max-w-[1280px] mx-auto">
+      <h1 className="sr-only">Suren Hembram</h1>
       <hero className="relative lg:h-[700px] w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
         <BackgroundBeams className="absolute inset-0 h-full w-full" />
         <div className="relative w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row z-20">
