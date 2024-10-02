@@ -4,7 +4,7 @@ import { LayoutGrid } from "@/components/ui/layout-grid";
 
 export function SkillsLayoutGrid() {
     return (
-        (<div className="h-[380px] w-[380px] mt-6">
+        (<div className="h-[360px] w-[360px] mt-6">
             <LayoutGrid cards={cards} />
         </div>)
     );
