@@ -7,11 +7,11 @@ import { SkillsLayoutGrid } from "./components/UI/SkillsLayoutGrid";
 
 export default function Home() {
   return (
-    <main className="top-0 start-0 flex flex-col row-start-2 items-center sm:items-start max-w-[1280px] mx-auto">
-      <hero className="relative h-[700px]  w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
+    <main className="top-0 start-0 flex flex-col items-center sm:items-start lg:max-w-[1280px] mx-auto">
+      <hero className="relative lg:h-[700px] w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
         <BackgroundBeams className="absolute inset-0 h-full w-full" />
         <div className="relative w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row z-20">
-          <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px]  xs:text-[48px] md:text-[64px] lg:text-[68px] font-gloock font-bold ">
+          <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px] xs:mt-4  xs:text-[46px] md:text-[64px] lg:text-[68px] font-gloock font-bold ">
             <TextGenerateEffect duration={2} filter={false} words={`To Code,`} className={"m-0 p-0 border-none"} />
             <TextGenerateEffect duration={2} filter={false} words={`To Solve Problem,`} />
             <TextGenerateEffect duration={2} filter={false} words={`To Contribute`} />
@@ -49,7 +49,7 @@ export default function Home() {
               About
             </h2>
             <p className="text-[20px] w-full font-inter mb-4">
-              Hey there ! I‛m a tech-savvy doing wonder-tweaking coder who adores solving problems digitally.
+              Hey there ! I‛m a tech-savvy coder who adores solving problems digitally.
               My skills are armed with an assortment of nifty programming languages and methodologies from
               <b><u> Full-stack development</u></b> of <b><u>Web, Mobile, Desktop</u></b> Apps to
               <b><u> Cloud Computing</u></b>.
@@ -108,8 +108,8 @@ export default function Home() {
         </div>
       </hero>
 
-      <section id="projects-section" className="h-full flex flex-col gap-8 md:px-10 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto">
-        <ul className="h-full flex flex-row mx-auto w-full xl:min-w-[1280px] md:w-screen">
+      <section id="projects-section" className=" flex flex-col gap-8 md:px-10 sm:px-5 xs:px-10 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto xs:w-screen">
+      <ul className="h-full grid grid-cols-2 gap-4 mx-auto w-full xl:min-w-[1280px] md:w-screen md:grid-cols-4 ">
           <li className="w-full h-full flex flex-col">
             <h2 className=" text-heading3 font-bold w-full font-figtree">
               22+
@@ -156,7 +156,8 @@ export default function Home() {
 
       </section>
 
-      <section id="projects-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
+      
+       <section id="projects-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
         <div className="w-full h-full flex gap-8">
           <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
             Projects Showcase
@@ -172,10 +173,10 @@ export default function Home() {
 
         <div className="w-full h-full mt-20">
           <h2 className="font-bold w-full font-figtree mb-4 text-heading2">
-            Curious Questions ?
+            Curious Questions?
           </h2>
 
-          <div className="grid grid-cols-2 gap-8 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <div>
               <h4 className="font-bold text-heading4">Which language do you program with?</h4>
               <p className="text-body">Coming from C++ , Java background, and mastering projects on JavaScript, Python, PHP, .NET. I{'’'}ve got it all covered. </p>
@@ -196,7 +197,8 @@ export default function Home() {
         </div>
 
       </section>
-
+{
+      /*
       <section id="skills-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-16 ">
         <div className="w-full h-full flex gap-8">
           <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
@@ -312,6 +314,11 @@ export default function Home() {
         </div>
 
       </section>
+
+      */}
+
+     
+      
 
     </main>
   );
