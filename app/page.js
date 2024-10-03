@@ -375,7 +375,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full h-full mt-20">
+        <div className="w-full h-full mt-10">
           <h3 className="font-bold text-heading3">Works and Awards</h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8 font-inter">
