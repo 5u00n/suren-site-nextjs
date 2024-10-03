@@ -332,18 +332,46 @@ export default function Home() {
 
         </div>
 
-        <div className="w-full h-full mt-8 flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2">
-            <h3 className="font-bold text-heading3">Masters in Computer Application</h3>
-            <p className="text-body">Computer Application</p>
-            <p className="text-body">2021 - 2022</p>
-            <p className="text-body underline text-blue-400"><Link href={"https://mitwpu.edu.in"}>MIT World Peace University, Pune, India</Link></p>
+        <div className="w-full h-full flex flex-col md:flex-row">
+          <div className="w-full md:w-1/2 gap-4 flex flex-col p-4">
+            <div className="w-full">
+              <h3 className="font-bold text-heading4 font-figtree">Masters in Computer Application</h3>
+              <div className="w-full flex flex-row justify-between mb-2 font-inter">
+                <span className="text-body font-bold underline text-blue-400"><Link href={"https://mitwpu.edu.in"}>MIT World Peace University</Link></span>
+                <span className="text-sm px-2">Pune, Maharashtra, India</span>
+                <span className="text-body border px-2 rounded">2021 - 2022</span>
+              </div>
+              <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the Admistrator’s from the bottom.</p>
+            </div>
+            
+            <div className="w-full">
+              <h3 className="font-bold text-heading4 font-figtree">Bachelor of Computer Application</h3>
+              <div className="w-full flex flex-row justify-between mb-2 font-inter">
+                <span className="text-body font-bold underline text-blue-400"><Link href={"https://sau.edu.in"}>Spicer Adventist University</Link></span>
+                <span className="text-sm px-2">Pune, Maharashtra, India</span>
+                <span className="text-body border px-2 rounded">2017 - 2020</span>
+              </div>
+              <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the IT Administrators.</p>
+              </div>
+
+              <div className="w-full">
+              <h3 className="font-bold text-heading4 font-figtree">Higher Secondary Certificate</h3>
+              <div className="w-full flex flex-row justify-between mb-2 font-inter">
+                <span className="text-body font-bold underline text-blue-400"><Link href={""}>Irvine Adventist, TPS DAV</Link></span>
+                <span className="text-sm px-2">Ghatshila, Jharkhand, India</span>
+                <span className="text-body border px-2 rounded">2004 - 2016</span>
+                </div>
+              <p className="text-body font-inter">A Journey where I learned the basics of life, hard work, and common sense.</p>
+              </div>
           </div>
-          <div className="w-full md:w-1/2">
-            <h3 className="font-bold text-heading3">Bachelors in Computer Application</h3>
-            <p className="text-body">Computer Application</p>
-            <p className="text-body">2017 - 2020</p>
-            <p className="text-body underline text-blue-400"><Link href={"https://ssau.edu.in"}>Spicer Adventist University, Pune, India</Link></p>
+
+          <div className=" md:w-1/2 gap-2 p-4">
+            <div class="grid grid-rows-3 grid-cols-3 grid-flow-col gap-4 bg-slate-800 h-full">
+              <div class="row-span-2 col-span-2 bg-slate-400">01</div>
+              <div class=" bg-slate-400 row-span-2 ">02</div>
+              <div class=" bg-slate-400 col-span-2 col-start-1 row-start-3">03</div>
+              <div class="bg-slate-400">04</div>
+            </div>
           </div>
         </div>
 
