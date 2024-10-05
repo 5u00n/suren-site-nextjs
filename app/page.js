@@ -343,7 +343,7 @@ export default function Home() {
               </div>
               <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the Admistrator’s from the bottom.</p>
             </div>
-            
+
             <div className="w-full">
               <h3 className="font-bold text-heading4 font-figtree">Bachelor of Computer Application</h3>
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
@@ -352,25 +352,25 @@ export default function Home() {
                 <span className="text-body border px-2 rounded">2017 - 2020</span>
               </div>
               <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the IT Administrators.</p>
-              </div>
+            </div>
 
-              <div className="w-full">
+            <div className="w-full">
               <h3 className="font-bold text-heading4 font-figtree">Higher Secondary Certificate</h3>
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
                 <span className="text-body font-bold underline text-blue-400"><Link href={""}>Irvine Adventist, TPS DAV</Link></span>
                 <span className="text-sm px-2">Ghatshila, Jharkhand, India</span>
                 <span className="text-body border px-2 rounded">2004 - 2016</span>
-                </div>
-              <p className="text-body font-inter">A Journey where I learned the basics of life, hard work, and common sense.</p>
               </div>
+              <p className="text-body font-inter">A Journey where I learned the basics of life, hard work, and common sense.</p>
+            </div>
           </div>
 
-          <div className=" md:w-1/2 gap-2 p-4">
-            <div class="grid grid-rows-3 grid-cols-3 grid-flow-col gap-4 bg-slate-800 h-full">
-              <div class="row-span-2 col-span-2 bg-slate-400">01</div>
-              <div class=" bg-slate-400 row-span-2 ">02</div>
-              <div class=" bg-slate-400 col-span-2 col-start-1 row-start-3">03</div>
-              <div class="bg-slate-400">04</div>
+          <div className="md:w-1/2 gap-2 p-4 flex items-center justify-center">
+            <div className="grid grid-rows-3 grid-cols-3 grid-flow-col gap-4 w-[420px] h-80">
+              <div className="row-span-2 col-span-2 bg-[#cf7878] rounded">01</div>
+              <div className="bg-[#c7d387] row-span-2 rounded">02</div>
+              <div className="bg-[#6c9ead] col-span-2 col-start-1 row-start-3 rounded">03</div>
+              <div className="bg-[#5e557c] rounded">04</div>
             </div>
           </div>
         </div>
