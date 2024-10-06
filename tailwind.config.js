@@ -68,7 +68,7 @@ module.exports = {
 				figtree: ['Figtree', 'sans-serif'],
 			},
 			fontSize: {
-				body: '1rem',
+				body: '0.875rem',
 				heading1: '3rem',
 				heading2: '2.375rem',
 				heading3: '2rem',

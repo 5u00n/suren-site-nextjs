@@ -1,3 +1,4 @@
+'use client';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -370,38 +371,40 @@ export default function PricingSectionCards() {
                 <h4 className="text-xl font-medium">Free</h4>
               </div>
               <Table>
-                {planFeatures.map((featureType) => (
-                  <>
-                    <TableRow
-                      key={featureType.type}
-                      className="bg-muted hover:bg-muted"
-                    >
-                      <TableCell
-                        colSpan={2}
-                        className="w-10/12 text-primary font-bold"
-                      >
-                        {featureType.type}
-                      </TableCell>
-                    </TableRow>
-                    {featureType.features.map((feature) => (
+                <TableBody>
+                  {planFeatures.map((featureType) => (
+                    <>
                       <TableRow
-                        className="text-muted-foreground"
-                        key={feature.name}
+                        key={featureType.type}
+                        className="bg-muted hover:bg-muted"
                       >
-                        <TableCell className="w-11/12">
-                          {feature.name}
-                        </TableCell>
-                        <TableCell className="text-right">
-                          {feature.enterprise ? (
-                            <CheckIcon className="h-5 w-5" />
-                          ) : (
-                            <MinusIcon className="h-5 w-5" />
-                          )}
+                        <TableCell
+                          colSpan={2}
+                          className="w-10/12 text-primary font-bold"
+                        >
+                          {featureType.type}
                         </TableCell>
                       </TableRow>
-                    ))}
-                  </>
-                ))}
+                      {featureType.features.map((feature) => (
+                        <TableRow
+                          className="text-muted-foreground"
+                          key={feature.name}
+                        >
+                          <TableCell className="w-11/12">
+                            {feature.name}
+                          </TableCell>
+                          <TableCell className="text-right">
+                            {feature.enterprise ? (
+                              <CheckIcon className="h-5 w-5" />
+                            ) : (
+                              <MinusIcon className="h-5 w-5" />
+                            )}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </>
+                  ))}
+                </TableBody>
               </Table>
             </section>
             <section>
@@ -409,38 +412,40 @@ export default function PricingSectionCards() {
                 <h4 className="text-xl font-medium">Startup</h4>
               </div>
               <Table>
-                {planFeatures.map((featureType) => (
-                  <>
-                    <TableRow
-                      key={featureType.type}
-                      className="bg-muted hover:bg-muted"
-                    >
-                      <TableCell
-                        colSpan={2}
-                        className="w-10/12 text-primary font-bold"
-                      >
-                        {featureType.type}
-                      </TableCell>
-                    </TableRow>
-                    {featureType.features.map((feature) => (
+                <TableBody>
+                  {planFeatures.map((featureType) => (
+                    <>
                       <TableRow
-                        className="text-muted-foreground"
-                        key={feature.name}
+                        key={featureType.type}
+                        className="bg-muted hover:bg-muted"
                       >
-                        <TableCell className="w-11/12">
-                          {feature.name}
-                        </TableCell>
-                        <TableCell className="text-right">
-                          {feature.startup ? (
-                            <CheckIcon className="h-5 w-5" />
-                          ) : (
-                            <MinusIcon className="h-5 w-5" />
-                          )}
+                        <TableCell
+                          colSpan={2}
+                          className="w-10/12 text-primary font-bold"
+                        >
+                          {featureType.type}
                         </TableCell>
                       </TableRow>
-                    ))}
-                  </>
-                ))}
+                      {featureType.features.map((feature) => (
+                        <TableRow
+                          className="text-muted-foreground"
+                          key={feature.name}
+                        >
+                          <TableCell className="w-11/12">
+                            {feature.name}
+                          </TableCell>
+                          <TableCell className="text-right">
+                            {feature.startup ? (
+                              <CheckIcon className="h-5 w-5" />
+                            ) : (
+                              <MinusIcon className="h-5 w-5" />
+                            )}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </>
+                  ))}
+                </TableBody>
               </Table>
             </section>
             <section>
@@ -448,38 +453,40 @@ export default function PricingSectionCards() {
                 <h4 className="text-xl font-medium">Team</h4>
               </div>
               <Table>
-                {planFeatures.map((featureType) => (
-                  <>
-                    <TableRow
-                      key={featureType.type}
-                      className="bg-muted hover:bg-muted"
-                    >
-                      <TableCell
-                        colSpan={2}
-                        className="w-10/12 text-primary font-bold"
-                      >
-                        {featureType.type}
-                      </TableCell>
-                    </TableRow>
-                    {featureType.features.map((feature) => (
+                <TableBody>
+                  {planFeatures.map((featureType) => (
+                    <>
                       <TableRow
-                        className="text-muted-foreground"
-                        key={feature.name}
+                        key={featureType.type}
+                        className="bg-muted hover:bg-muted"
                       >
-                        <TableCell className="w-11/12">
-                          {feature.name}
-                        </TableCell>
-                        <TableCell className="text-right">
-                          {feature.team ? (
-                            <CheckIcon className="h-5 w-5" />
-                          ) : (
-                            <MinusIcon className="h-5 w-5" />
-                          )}
+                        <TableCell
+                          colSpan={2}
+                          className="w-10/12 text-primary font-bold"
+                        >
+                          {featureType.type}
                         </TableCell>
                       </TableRow>
-                    ))}
-                  </>
-                ))}
+                      {featureType.features.map((feature) => (
+                        <TableRow
+                          className="text-muted-foreground"
+                          key={feature.name}
+                        >
+                          <TableCell className="w-11/12">
+                            {feature.name}
+                          </TableCell>
+                          <TableCell className="text-right">
+                            {feature.team ? (
+                              <CheckIcon className="h-5 w-5" />
+                            ) : (
+                              <MinusIcon className="h-5 w-5" />
+                            )}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </>
+                  ))}
+                </TableBody>
               </Table>
             </section>
             <section>
@@ -487,38 +494,40 @@ export default function PricingSectionCards() {
                 <h4 className="text-xl font-medium">Enterprise</h4>
               </div>
               <Table>
-                {planFeatures.map((featureType) => (
-                  <>
-                    <TableRow
-                      key={featureType.type}
-                      className="bg-muted hover:bg-muted"
-                    >
-                      <TableCell
-                        colSpan={2}
-                        className="w-10/12 text-primary font-bold"
-                      >
-                        {featureType.type}
-                      </TableCell>
-                    </TableRow>
-                    {featureType.features.map((feature) => (
+                <TableBody>
+                  {planFeatures.map((featureType) => (
+                    <>
                       <TableRow
-                        className="text-muted-foreground"
-                        key={feature.name}
+                        key={featureType.type}
+                        className="bg-muted hover:bg-muted"
                       >
-                        <TableCell className="w-11/12">
-                          {feature.name}
-                        </TableCell>
-                        <TableCell className="text-right">
-                          {feature.enterprise ? (
-                            <CheckIcon className="h-5 w-5" />
-                          ) : (
-                            <MinusIcon className="h-5 w-5" />
-                          )}
+                        <TableCell
+                          colSpan={2}
+                          className="w-10/12 text-primary font-bold"
+                        >
+                          {featureType.type}
                         </TableCell>
                       </TableRow>
-                    ))}
-                  </>
-                ))}
+                      {featureType.features.map((feature) => (
+                        <TableRow
+                          className="text-muted-foreground"
+                          key={feature.name}
+                        >
+                          <TableCell className="w-11/12">
+                            {feature.name}
+                          </TableCell>
+                          <TableCell className="text-right">
+                            {feature.enterprise ? (
+                              <CheckIcon className="h-5 w-5" />
+                            ) : (
+                              <MinusIcon className="h-5 w-5" />
+                            )}
+                          </TableCell>
+                        </TableRow>
+                      ))}
+                    </>
+                  ))}
+                </TableBody>
               </Table>
             </section>
           </div>

@@ -4,6 +4,7 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Link from "next/link";
 import { ProjectsLayoutGrid } from "./components/UI/ProjectsLayoutGrid";
 import { SkillsLayoutGrid } from "./components/UI/SkillsLayoutGrid";
+import PricingSectionCards from "@/components/ui/PricingSectionCards";
 
 export default function Home() {
   return (
@@ -77,11 +78,6 @@ export default function Home() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#experience-section">
-                    Experience
-                  </Link>
-                </li>
-                <li>
                   <Link href="#certificate-section">
                     Certificates
                   </Link>
@@ -110,8 +106,8 @@ export default function Home() {
       </hero>
 
       <section id="projects-section" className=" flex flex-col gap-8 md:px-10 sm:px-5 xs:px-10 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto xs:w-screen">
-        <ul className="h-full grid grid-cols-2 gap-4 mx-auto w-full xl:min-w-[1280px] md:w-screen md:grid-cols-4 ">
-          <li className="w-full h-full flex flex-col">
+        <ul className="h-full grid grid-cols-2 gap-4 mx-auto w-full md:w-full md:grid-cols-4 ">
+          <li className="w-full h-full flex flex-col ">
             <h2 className=" text-heading3 font-bold w-full font-figtree">
               22+
             </h2>
@@ -212,11 +208,11 @@ export default function Home() {
         </div>
 
         <div className="w-full h-full mt-8 flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 ">
             <SkillsLayoutGrid />
           </div>
           <div className="flex flex-col mt-3 w-full  md:w-1/2">
-            <h3 className="font-bold text-heading3">IT Engineer to the Core</h3>
+            <h3 className="font-bold text-heading3 text-center md:text-left">IT Engineer to the Core</h3>
             <ul className="flex flex-col gap-4 mt-4 text-sm font-inter text-center md:text-left">
               <li>
                 <span className="font-bold text-heading4">Full-stack Development</span>
@@ -332,14 +328,49 @@ export default function Home() {
 
         </div>
 
-        <div className="w-full h-full flex flex-col md:flex-row">
+
+
+
+        <div className="w-full gap-4 flex flex-col p-4 md:hidden">
+          <div className="w-full">
+            <h3 className="font-bold text-heading4 font-figtree">Masters in Computer Application</h3>
+            <div className="w-full flex flex-row justify-between mb-2 font-inter">
+              <span ><Link className="text-body font-bold underline text-blue-400" href={"https://mitwpu.edu.in"}>MIT World Peace University</Link>
+                <p className="text-sm">Pune, Maharashtra, India</p></span>
+              <span className="text-body px-2 rounded ">2021 - 2022</span>
+            </div>
+            <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the Admistrator’s from the bottom.</p>
+          </div>
+
+          <div className="w-full">
+            <h3 className="font-bold text-heading4 font-figtree">Bachelor of Computer Application</h3>
+            <div className="w-full flex flex-row justify-between mb-2 font-inter">
+              <span ><Link className="text-body font-bold underline text-blue-400" href={"https://sau.edu.in"}>Spicer Adventist University</Link>
+                <p className="text-sm">Pune, Maharashtra, India</p></span>
+              <span className="text-body px-2 rounded">2017 - 2020</span>
+            </div>
+            <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the IT Administrators.</p>
+          </div>
+
+          <div className="w-full">
+            <h3 className="font-bold text-heading4 font-figtree">Higher Secondary Certificate</h3>
+            <div className="w-full flex flex-row justify-between mb-2 font-inter">
+              <span ><Link className="text-body font-bold underline text-blue-400" href={""}>Irvine Adventist, TPS DAV</Link>
+                <p className="text-sm">Ghatshila, Jharkhand, India</p></span>
+              <span className="text-body px-2 rounded ">2004 - 2016</span>
+            </div>
+            <p className="text-sm font-inter">A Journey where I learned the basics of life, hard work, and common sense.</p>
+          </div>
+        </div>
+
+        <div className="w-full h-full hidden md:flex flex-col md:flex-row ">
           <div className="w-full md:w-1/2 gap-4 flex flex-col p-4">
             <div className="w-full">
               <h3 className="font-bold text-heading4 font-figtree">Masters in Computer Application</h3>
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
                 <span className="text-body font-bold underline text-blue-400"><Link href={"https://mitwpu.edu.in"}>MIT World Peace University</Link></span>
                 <span className="text-sm px-2">Pune, Maharashtra, India</span>
-                <span className="text-body border px-2 rounded">2021 - 2022</span>
+                <span className="text-body border px-2 rounded ">2021 - 2022</span>
               </div>
               <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the Admistrator’s from the bottom.</p>
             </div>
@@ -359,14 +390,14 @@ export default function Home() {
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
                 <span className="text-body font-bold underline text-blue-400"><Link href={""}>Irvine Adventist, TPS DAV</Link></span>
                 <span className="text-sm px-2">Ghatshila, Jharkhand, India</span>
-                <span className="text-body border px-2 rounded">2004 - 2016</span>
+                <span className="text-body border px-2 rounded ">2004 - 2016</span>
               </div>
               <p className="text-body font-inter">A Journey where I learned the basics of life, hard work, and common sense.</p>
             </div>
           </div>
 
           <div className="md:w-1/2 gap-2 p-4 flex items-center justify-center">
-            <div className="grid grid-rows-3 grid-cols-3 grid-flow-col gap-4 w-[420px] h-80">
+            <div className=" grid-rows-3 grid-cols-3 grid-flow-col gap-4 max-w-[420px] max-h-80 h-full w-full hidden md:grid">
               <div className="row-span-2 col-span-2 bg-[#cf7878] rounded">01</div>
               <div className="bg-[#c7d387] row-span-2 rounded">02</div>
               <div className="bg-[#6c9ead] col-span-2 col-start-1 row-start-3 rounded">03</div>
@@ -384,9 +415,50 @@ export default function Home() {
       </section>
 
 
+      <section id="certificate-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-16 lg:rounded">
+        <div className="w-full h-full gap-8 flex">
+          <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
+            Certificates
+          </h2>
+
+        </div>
 
 
+      </section>
 
+      <section id="pricing-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
+        <div className="w-full h-full gap-8 flex">
+          <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
+            Pricing
+          </h2>
+
+        </div>
+
+        <div className="w-full h-full">
+
+        </div>
+
+      </section>
+
+      <section id="partner-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-16 ">
+        <div className="w-full h-full gap-8 flex">
+          <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
+            Partners
+          </h2>
+
+        </div>
+
+      </section>
+
+      <section id="contact-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16 ">
+        <div className="w-full h-full gap-8 flex">
+          <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
+            Contact
+          </h2>
+
+        </div>
+
+      </section>
 
     </main>
   );
