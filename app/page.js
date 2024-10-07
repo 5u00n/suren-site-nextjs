@@ -370,7 +370,7 @@ export default function Home() {
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
                 <span className="text-body font-bold underline text-blue-400"><Link href={"https://mitwpu.edu.in"}>MIT World Peace University</Link></span>
                 <span className="text-sm px-2">Pune, Maharashtra, India</span>
-                <span className="text-body border px-2 rounded ">2021 - 2022</span>
+                <span className="text-body  px-2 rounded ">2021 - 2022</span>
               </div>
               <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the Admistrator’s from the bottom.</p>
             </div>
@@ -380,7 +380,7 @@ export default function Home() {
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
                 <span className="text-body font-bold underline text-blue-400"><Link href={"https://sau.edu.in"}>Spicer Adventist University</Link></span>
                 <span className="text-sm px-2">Pune, Maharashtra, India</span>
-                <span className="text-body border px-2 rounded">2017 - 2020</span>
+                <span className="text-body  px-2 rounded">2017 - 2020</span>
               </div>
               <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the IT Administrators.</p>
             </div>
@@ -390,7 +390,7 @@ export default function Home() {
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
                 <span className="text-body font-bold underline text-blue-400"><Link href={""}>Irvine Adventist, TPS DAV</Link></span>
                 <span className="text-sm px-2">Ghatshila, Jharkhand, India</span>
-                <span className="text-body border px-2 rounded ">2004 - 2016</span>
+                <span className="text-body  px-2 rounded ">2004 - 2016</span>
               </div>
               <p className="text-body font-inter">A Journey where I learned the basics of life, hard work, and common sense.</p>
             </div>
