@@ -208,7 +208,7 @@ export default function Home() {
         </div>
 
         <div className="w-full h-full mt-8 flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2 ">
+          <div className="w-full md:w-1/2 flex justify-center md:justify-start ">
             <SkillsLayoutGrid />
           </div>
           <div className="flex flex-col mt-3 w-full  md:w-1/2">
