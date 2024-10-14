@@ -36,9 +36,9 @@ export default function RootLayout({ children }) {
               "@context": "https://schema.org",
               "@type": "Person",
               "name": "Suren Hembram",
-              "url": "https://surenhembram.com",
+              "url": "https://suren-site.versel.app",
               "sameAs": [
-                "https://www.linkedin.com/in/suren-hembram",
+                "https://www.linkedin.com/in/surenhembram",
                 ""
               ]
             })
