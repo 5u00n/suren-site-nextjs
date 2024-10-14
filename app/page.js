@@ -5,11 +5,12 @@ import Link from "next/link";
 import { ProjectsLayoutGrid } from "./components/UI/ProjectsLayoutGrid";
 import { SkillsLayoutGrid } from "./components/UI/SkillsLayoutGrid";
 import PricingSectionCards from "@/components/ui/PricingSectionCards";
-
+import { ArticleJsonLd } from "next-seo";
 
 export default function Home() {
   return (
     <main className="top-0 start-0 flex flex-col items-center sm:items-start lg:max-w-[1280px] mx-auto">
+
       <h1 className="sr-only">Suren Hembram</h1>
       <hero className="relative lg:h-[700px] w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
         <BackgroundBeams className="absolute inset-0 h-full w-full" />
