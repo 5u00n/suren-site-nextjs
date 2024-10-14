@@ -6,6 +6,9 @@ import Navbar from "./components/NavBar";
 
 import { ThemeProvider } from "@/components/theme-provider";
 
+import { DefaultSeo, NextSeo } from 'next-seo';
+import Head from 'next/head';
+
 
 
 export const metadata = {
@@ -17,7 +20,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      <DefaultSeo
+        title={metadata.title}
+        description={metadata.description}
+        keywords={metadata.keywords}
+        openGraph={{
+          type: 'website',
+          locale: 'en_IE',
+          url: 'https://suren.vercel.app/',
+          site_name: 'Suren Hembram Portfolio',
+        }}
+        twitter={{
+          handle: '@surenhembram',
+          site: '@surenhembram',
+          cardType: 'summary_large_image',
+        }}
+      />
+
+
+      <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
         <link rel="icon" href="/app/favicon.ico" />
@@ -27,7 +48,26 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="index, follow" />
         <meta name="google-site-verification" content="v7fSZGeFLbxk3-i3tStvF-BeDH0FSwK_GPcJTVu5NuM" />
         <meta name="keywords" content={metadata.keywords} />
-      </head>
+
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Suren Hembram",
+            "url": "https://suren.vercel.app/",
+            "sameAs": [
+              "https://www.linkedin.com/in/surenhembram/",
+              "
+            ],
+            "jobTitle": "Software Developer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Freelancer"
+            }
+          }`
+        }} />
+
+      </Head>
       <body className={`antialiased min-h-screen flex flex-col`}>
         <ThemeProvider
           attribute="class"

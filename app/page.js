@@ -6,6 +6,7 @@ import { ProjectsLayoutGrid } from "./components/UI/ProjectsLayoutGrid";
 import { SkillsLayoutGrid } from "./components/UI/SkillsLayoutGrid";
 import PricingSectionCards from "@/components/ui/PricingSectionCards";
 
+
 export default function Home() {
   return (
     <main className="top-0 start-0 flex flex-col items-center sm:items-start lg:max-w-[1280px] mx-auto">
