@@ -50,16 +50,16 @@ export default function RootLayout({ children }) {
 
 
 
-      <body className={`antialiased min-h-screen flex flex-col`}>
+      <body className={`antialiased min-h-screen flex flex-col relative`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex  min-h-screen">
-            <Navbar />
-            <div className="absolute min-w-full flex-grow">
+          <Navbar />
+          <div className="absolute min-w-full min-h-screen flex flex-col">
+            <div className="flex-1">
               {children}
             </div>
             <Footer />
