@@ -57,11 +57,13 @@ export default function RootLayout({ children }) {
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          <div className="absolute min-w-full flex-grow">
-            {children}
+          <div className="flex  min-h-screen">
+            <Navbar />
+            <div className="absolute min-w-full flex-grow">
+              {children}
+            </div>
+            <Footer />
           </div>
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
