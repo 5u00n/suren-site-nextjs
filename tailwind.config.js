@@ -1,7 +1,7 @@
 const {
 	default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
-
+const colors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -83,7 +83,17 @@ module.exports = {
 				'lg': '1024px',
 				'xl': '1280px',
 				'2xl': '1536px',
-			},
+			},animation: {
+				scroll:
+				  "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+			  },
+			  keyframes: {
+				scroll: {
+				  to: {
+					transform: "translate(calc(-50% - 0.5rem))",
+				  },
+				},
+			  },
 
 		}
 	},
