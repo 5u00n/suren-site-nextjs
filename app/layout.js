@@ -1,15 +1,10 @@
 import localFont from "next/font/local";
 import "./globals.css";
 
-import Footer from "./components/Footer";
-import Navbar from "./components/NavBar";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/NavBar";
 
 import { ThemeProvider } from "@/components/theme-provider";
-
-import { ArticleJsonLd, DefaultSeo, NextSeo } from 'next-seo';
-import Head from 'next/head';
-
-
 
 export const metadata = {
   title: "Suren Hembram Portfolio",
@@ -47,8 +42,6 @@ export default function RootLayout({ children }) {
 
 
       </head>
-
-
 
       <body className={`antialiased min-h-screen flex flex-col relative`}>
         <ThemeProvider
