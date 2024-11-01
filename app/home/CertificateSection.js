@@ -3,7 +3,7 @@ import {InfiniteMovingCards} from '@/components/ui/infinite-moving-cards';
 
 function CertificateSection() {
   return (
-    <section id="certificate-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-16 lg:rounded">
+    <section id="certificate-section" className="w-full h-full md:px-10 sm:px-5 xs:px-5 bg-[#ECF2FF] dark:bg-[#314061] py-16 lg:rounded">
         <div className="w-full h-full flex flex-col gap-8">
           <h2 className="font-bold font-gloock text-heading1">
             Certificates & Licenses

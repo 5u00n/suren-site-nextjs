@@ -3,7 +3,7 @@ import React from 'react'
 function PricingSection() {
   return (
     <section id="pricing-section" className="w-full h-full md:px-16 sm:px-5 xs:px-5 bg-[#FFFFFF] dark:bg-transparent py-16">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl  lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h2 className="font-bold font-gloock text-4xl mb-4">
               Simple, transparent pricing

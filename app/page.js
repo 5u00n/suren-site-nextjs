@@ -34,11 +34,12 @@ export default function Home() {
 
       <CertificateSection />
       
-      <PricingSection />
+     <PricingSection />
 
       <PartnerSection/> 
 
-      <ContactSection />
+      <ContactSection /> 
+
 
 
       
