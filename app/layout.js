@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
 
       </head>
 
-      <body className={`antialiased min-h-screen flex flex-col relative`}>
+      <body className={`antialiased min-h-screen flex flex-col relative w-full`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -51,11 +51,11 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <Navbar />
-          <div className="absolute min-w-full min-h-screen flex flex-col">
+          <div className="absolute w-full min-h-screen flex flex-col">
             <div className="flex-1">
               {children}
             </div>
-            <Footer />
+             <Footer /> 
           </div>
         </ThemeProvider>
       </body>

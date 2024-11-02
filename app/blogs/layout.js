@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function BlogLayout({children}) {
-    return (
-        <div className="container mx-auto px-4 flex-grow">
-          {children}
-        </div>
-    )
+function BlogLayout({ children }) {
+  return <div>{children}</div>;
 }
 
 export default BlogLayout;

@@ -1,38 +1,76 @@
-import React from 'react';
-import Image from 'next/image';
-import ProjectHero from '@/public/images/heroproject.svg'
+import React from "react";
+import Image from "next/image";
+import ProjectHero from "@/public/images/heroproject.svg";
 
 function Services() {
-    return (
-        <main className="top-0 start-0 flex flex-col items-center sm:items-start lg:max-w-[1280px] mx-auto">
-            <div className="relative bg-[#3c5c46] dark:bg-gray-800 shadow-lg lg:h-[600px] w-full flex items-center justify-center">
-                <Image src={ProjectHero} alt="Services" layout="fill" objectFit="cover" className="absolute rounded-lg z-0" />
-                <h1 className="relative text-title text-center font-gloock z-10 py-4 px-6 bg-[#3c5c46] dark:bg-gray-800">Services</h1>
-            </div>
+  return (
+    <main className="mx-auto flex flex-col items-center sm:items-start lg:max-w-[1280px]">
+      <div className="relative flex w-full flex-col items-center justify-center bg-[#3c5c46] shadow-lg dark:bg-gray-800 lg:h-[600px]">
+        <Image
+          src={ProjectHero}
+          alt="Services"
+          layout="fill"
+          objectFit="cover"
+          className="absolute z-0 rounded-lg"
+        />
+        <div className="absolute z-10 flex  flex-col items-center justify-center rounded-lg dark:bg-gray-800 bg-opacity-50 p-10">
+          <h1 className="relative z-10 bg-[#3c5c46] text-center font-gloock text-title dark:bg-gray-800">
+            SERVICES
+          </h1>
+          <h2 className="relative z-10 bg-[#3c5c46] text-center font-gloock text-title dark:bg-gray-800">
+            ( Full page coming Soon)
+          </h2>
+        </div>
+      </div>
 
+      <section
+        id="projects-section"
+        className="mx-auto flex w-full max-w-[1280px] flex-col gap-8 bg-[#ECF2FF] px-5 py-3 dark:bg-[#314061]"
+      >
+        <h2 className="mb-4 w-full font-gloock text-heading1 font-bold">
+          Projects Showcase
+        </h2>
+        <p className="text-lg dark:text-white">
+          We provide a wide range of services to help you achieve your goals.
+        </p>
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-lg bg-white p-4 shadow-lg dark:bg-gray-800">
+            <h2 className="text-2xl font-bold dark:text-white">
+              Web Development
+            </h2>
+            <p className="text-lg dark:text-white">
+              We build websites and web applications using the latest
+              technologies.
+            </p>
+          </div>
+          <div className="rounded-lg bg-white p-4 shadow-lg dark:bg-gray-800">
+            <h2 className="text-2xl font-bold dark:text-white">
+              Mobile Development
+            </h2>
+            <p className="text-lg dark:text-white">
+              We build mobile apps for iOS and Android using React Native.
+            </p>
+          </div>
+          <div className="rounded-lg bg-white p-4 shadow-lg dark:bg-gray-800">
+            <h2 className="text-2xl font-bold dark:text-white">UI/UX Design</h2>
+            <p className="text-lg dark:text-white">
+              We design beautiful and user-friendly interfaces for your
+              products.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <section id="projects-section" className=" flex flex-col gap-8 md:px-10 sm:px-5 xs:px-10 bg-[#ECF2FF] dark:bg-[#314061] py-3  max-w-[1280px] mx-auto xs:w-full">
-                <h2 className=" font-bold w-full font-gloock mb-4 text-heading1">
-                    Projects Showcase
-                </h2>
-                <p className="text-lg dark:text-white">We provide a wide range of services to help you achieve your goals.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
-                    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-bold dark:text-white">Web Development</h2>
-                        <p className="text-lg dark:text-white">We build websites and web applications using the latest technologies.</p>
-                    </div>
-                    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-bold dark:text-white">Mobile Development</h2>
-                        <p className="text-lg dark:text-white">We build mobile apps for iOS and Android using React Native.</p>
-                    </div>
-                    <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-bold dark:text-white">UI/UX Design</h2>
-                        <p className="text-lg dark:text-white">We design beautiful and user-friendly interfaces for your products.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-    )
+      <section
+        id="services-section"
+        className="mx-auto flex w-full max-w-[1280px] flex-col gap-8 bg-[#ECF2FF] px-5 py-3 dark:bg-[#314061]"
+      >
+        <h2 className="mb-4 w-full font-gloock text-heading1 font-bold">
+          Our Services
+        </h2>
+      </section>
+    </main>
+  );
 }
 
-export default Services
+export default Services;

@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function ProjectLayout({children}) {
-  return (
-    <div className="container mx-auto px-4 flex-grow">
-          {children}
-        </div>
-  )
+function ProjectLayout({ children }) {
+  return <div>{children}</div>;
 }
 
 export default ProjectLayout;
