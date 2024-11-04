@@ -38,7 +38,7 @@ function HeroSection() {
               <button className="bg-[#458a4e] hover:bg-[#185c20] text-white font-bold py-2 px-4 rounded">
                 Hire Me
               </button>
-              <button className="bg-[#492abb] hover:bg-[#221457] text-white font-bold py-2 px-4 ml-3 rounded">
+              <button className="bg-[#233fbd] hover:bg-[#142457] text-white font-bold py-2 px-4 ml-3 rounded">
                 Contact Me
               </button>
             </div>

@@ -40,7 +40,7 @@ function EducationSection() {
           <div className="w-full">
             <h3 className="font-bold text-heading4 font-figtree">Higher Secondary Certificate</h3>
             <div className="w-full flex flex-row justify-between mb-2 font-inter">
-              <span ><Link className="text-body font-bold underline text-blue-400" href={""}>Irvine Adventist, TPS DAV</Link>
+              <span ><Link className="text-body font-bold underline text-blue-400" href={""}>Irvine Adventist, TPS DAV Public School</Link>
                 <p className="text-sm">Ghatshila, Jharkhand, India</p></span>
               <span className="text-body px-2 rounded ">2004 - 2016</span>
             </div>
@@ -73,7 +73,7 @@ function EducationSection() {
             <div className="w-full">
               <h3 className="font-bold text-heading4 font-figtree">Higher Secondary Certificate</h3>
               <div className="w-full flex flex-row justify-between mb-2 font-inter">
-                <span className="text-body font-bold underline text-blue-400"><Link href={""}>Irvine Adventist, TPS DAV</Link></span>
+                <span className="text-body font-bold underline text-blue-400"><Link href={""}>Irvine Adventist, TPS DAV Public School</Link></span>
                 <span className="text-sm px-2">Ghatshila, Jharkhand, India</span>
                 <span className="text-body  px-2 rounded ">2004 - 2016</span>
               </div>
