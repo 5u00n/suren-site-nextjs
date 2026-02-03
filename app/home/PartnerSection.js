@@ -209,8 +209,8 @@ function PartnerSection() {
               className="flex items-center justify-center p-4 grayscale transition-all hover:grayscale-0"
             >
               <Image
-                src="/images/companies/logo1.png"
-                alt="Company 1"
+                src="/images/companies/logo1.svg"
+                alt="Tech Partner"
                 width={120}
                 height={60}
                 className="object-contain"
@@ -221,8 +221,8 @@ function PartnerSection() {
               className="flex items-center justify-center p-4 grayscale transition-all hover:grayscale-0"
             >
               <Image
-                src="/images/companies/logo2.png"
-                alt="Company 2"
+                src="/images/companies/logo2.svg"
+                alt="Innovation"
                 width={120}
                 height={60}
                 className="object-contain"
@@ -233,8 +233,8 @@ function PartnerSection() {
               className="flex items-center justify-center p-4 grayscale transition-all hover:grayscale-0"
             >
               <Image
-                src="/images/companies/logo3.png"
-                alt="Company 3"
+                src="/images/companies/logo3.svg"
+                alt="Digital"
                 width={120}
                 height={60}
                 className="object-contain"
@@ -245,8 +245,8 @@ function PartnerSection() {
               className="flex items-center justify-center p-4 grayscale transition-all hover:grayscale-0"
             >
               <Image
-                src="/images/companies/logo4.png"
-                alt="Company 4"
+                src="/images/companies/logo4.svg"
+                alt="Solutions"
                 width={120}
                 height={60}
                 className="object-contain"

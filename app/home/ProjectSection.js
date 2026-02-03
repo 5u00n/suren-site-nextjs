@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import {ProjectsLayoutGrid} from './ProjectsLayoutGrid';
+import { ProjectsShowcase } from './ProjectsShowcase';
 
 function ProjectSection() {
   return (
@@ -16,7 +16,7 @@ function ProjectSection() {
           </span>
         </div>
 
-        <ProjectsLayoutGrid />
+        <ProjectsShowcase />
 
         <div className="w-full h-full mt-20">
           <h2 className="font-bold w-full font-figtree mb-4 text-heading2">

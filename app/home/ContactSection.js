@@ -1,6 +1,5 @@
 import React from 'react';
 import { Mail, Linkedin, Github } from 'lucide-react';
-import Link from 'next/link';
 
 
 function ContactSection() {
@@ -29,17 +28,17 @@ function ContactSection() {
                     <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/20">
                       <Linkedin className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
-                    <Link href="https://linkedin.com/in/surenhembram" className="text-sm hover:underline">
+                    <a href="https://linkedin.com/in/surenhembram" target="_blank" rel="noopener noreferrer" className="text-sm hover:underline" aria-label="LinkedIn profile">
                       linkedin.com/in/surenhembram
-                    </Link>
+                    </a>
                   </div>
                   <div className="flex items-center gap-3 group">
                     <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/20">
                       <Github className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
-                    <Link href="https://github.com/5u00n" className="text-sm hover:underline">
+                    <a href="https://github.com/5u00n" target="_blank" rel="noopener noreferrer" className="text-sm hover:underline" aria-label="GitHub profile">
                       github.com/5u00n
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

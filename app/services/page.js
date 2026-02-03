@@ -1,76 +1,80 @@
 import React from "react";
 import Image from "next/image";
 import ProjectHero from "@/public/images/heroproject.svg";
+import Link from "next/link";
 
-function Services() {
+export const metadata = {
+  title: "Services | Suren Hembram",
+  description:
+    "Web development, mobile development, and UI/UX design services by Suren Hembram.",
+};
+
+export default function Services() {
   return (
-    <main className="mx-auto flex flex-col items-center sm:items-start lg:max-w-[1280px]">
-      <div className="relative flex w-full flex-col items-center justify-center bg-[#3c5c46] shadow-lg dark:bg-gray-800 lg:h-[600px]">
+    <main className="mx-auto flex flex-col items-center sm:items-start lg:max-w-[1280px] w-full">
+      <div className="relative flex w-full flex-col items-center justify-center bg-[#3c5c46] shadow-lg dark:bg-gray-800 lg:h-[400px] rounded-lg overflow-hidden">
         <Image
           src={ProjectHero}
           alt="Services"
-          layout="fill"
-          objectFit="cover"
-          className="absolute z-0 rounded-lg"
+          fill
+          className="object-cover opacity-60"
         />
-        <div className="absolute z-10 flex  flex-col items-center justify-center rounded-lg dark:bg-gray-800 bg-opacity-50 p-10">
-          <h1 className="relative z-10 bg-[#3c5c46] text-center font-gloock text-title dark:bg-gray-800">
-            SERVICES
+        <div className="absolute z-10 flex flex-col items-center justify-center rounded-lg p-10">
+          <h1 className="relative z-10 text-center font-gloock text-title text-white">
+            Services
           </h1>
-          <h2 className="relative z-10 bg-[#3c5c46] text-center font-gloock text-title dark:bg-gray-800">
-            ( Full page coming Soon)
-          </h2>
+          <p className="relative z-10 text-center font-figtree text-white/90 mt-2 max-w-xl">
+            Web development, mobile apps, and design.
+          </p>
         </div>
       </div>
 
       <section
-        id="projects-section"
-        className="mx-auto flex w-full max-w-[1280px] flex-col gap-8 bg-[#ECF2FF] px-5 py-3 dark:bg-[#314061]"
+        id="services-offerings"
+        className="mx-auto flex w-full max-w-[1280px] flex-col gap-8 px-5 py-12 md:px-16"
       >
-        <h2 className="mb-4 w-full font-gloock text-heading1 font-bold">
-          Projects Showcase
+        <h2 className="font-gloock text-heading1 font-bold">
+          What I offer
         </h2>
-        <p className="text-lg dark:text-white">
-          We provide a wide range of services to help you achieve your goals.
+        <p className="font-figtree text-body text-gray-600 dark:text-gray-300 max-w-2xl">
+          I provide a range of services to help you build and ship products.
         </p>
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-lg bg-white p-4 shadow-lg dark:bg-gray-800">
-            <h2 className="text-2xl font-bold dark:text-white">
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/40 p-6 shadow-md hover:shadow-lg transition-shadow">
+            <h3 className="font-gloock text-xl font-bold dark:text-white">
               Web Development
-            </h2>
-            <p className="text-lg dark:text-white">
-              We build websites and web applications using the latest
-              technologies.
+            </h3>
+            <p className="font-figtree text-body text-gray-600 dark:text-gray-300 mt-2">
+              Websites and web applications using React, Next.js, Node.js, and
+              modern JavaScript/TypeScript.
             </p>
           </div>
-          <div className="rounded-lg bg-white p-4 shadow-lg dark:bg-gray-800">
-            <h2 className="text-2xl font-bold dark:text-white">
+          <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/40 p-6 shadow-md hover:shadow-lg transition-shadow">
+            <h3 className="font-gloock text-xl font-bold dark:text-white">
               Mobile Development
-            </h2>
-            <p className="text-lg dark:text-white">
-              We build mobile apps for iOS and Android using React Native.
+            </h3>
+            <p className="font-figtree text-body text-gray-600 dark:text-gray-300 mt-2">
+              Mobile apps for iOS and Android using React Native and related
+              tooling.
             </p>
           </div>
-          <div className="rounded-lg bg-white p-4 shadow-lg dark:bg-gray-800">
-            <h2 className="text-2xl font-bold dark:text-white">UI/UX Design</h2>
-            <p className="text-lg dark:text-white">
-              We design beautiful and user-friendly interfaces for your
-              products.
+          <div className="rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800/40 p-6 shadow-md hover:shadow-lg transition-shadow">
+            <h3 className="font-gloock text-xl font-bold dark:text-white">
+              UI/UX Design
+            </h3>
+            <p className="font-figtree text-body text-gray-600 dark:text-gray-300 mt-2">
+              User-friendly interfaces and design for web and mobile products.
             </p>
           </div>
         </div>
-      </section>
-
-      <section
-        id="services-section"
-        className="mx-auto flex w-full max-w-[1280px] flex-col gap-8 bg-[#ECF2FF] px-5 py-3 dark:bg-[#314061]"
-      >
-        <h2 className="mb-4 w-full font-gloock text-heading1 font-bold">
-          Our Services
-        </h2>
+        <p className="font-figtree text-sm text-gray-500 dark:text-gray-400 mt-8">
+          Need something specific?{" "}
+          <Link href="/#contact-section" className="text-[#458a4e] dark:text-[#6ee7a3] hover:underline">
+            Get in touch
+          </Link>
+          .
+        </p>
       </section>
     </main>
   );
 }
-
-export default Services;

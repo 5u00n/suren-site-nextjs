@@ -16,9 +16,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/app/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta name="author" content="Suren Hembram" />
@@ -34,7 +33,7 @@ export default function RootLayout({ children }) {
               "url": "https://suren-site.versel.app",
               "sameAs": [
                 "https://www.linkedin.com/in/surenhembram",
-                ""
+                "https://github.com/5u00n"
               ]
             })
           }}
