@@ -74,7 +74,7 @@ export default function ServicesPage() {
   return (
     <main className="relative mx-auto flex flex-col items-center lg:max-w-[1280px] w-full min-h-screen">
       {/* Hero with beams */}
-      <section className="relative w-full md:px-16 sm:px-5 pt-6 pb-12 overflow-hidden">
+      <section className="relative w-full overflow-hidden">
         <div className="relative rounded-2xl overflow-hidden bg-[#3c5c46] dark:bg-gray-900 min-h-[340px] flex flex-col items-center justify-center">
           <Image
             src={ProjectHero}

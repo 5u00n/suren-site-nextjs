@@ -9,6 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
+    "generate-favicon": "node scripts/generate-pixelated-favicon.js",
     "deploy": "next build && firebase deploy --only hosting"
   },
   "dependencies": {
@@ -39,6 +40,8 @@
     "postcss": "^8",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
-    "tailwindcss": "^3.4.1"
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.1",
+    "to-ico": "^1.1.5"
   }
 }

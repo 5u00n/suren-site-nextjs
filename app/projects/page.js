@@ -33,7 +33,7 @@ export default async function ProjectsPage() {
 
   return (
     <main className="relative mx-auto flex flex-col items-center lg:max-w-[1280px] w-full min-h-screen">
-      <section className="relative w-full md:px-16 sm:px-5 pt-6 pb-12 overflow-hidden">
+      <section className="relative w-full overflow-hidden">
         <div className="relative rounded-2xl overflow-hidden bg-gradient-to-tr from-[#3e6d32be] to-[#09add6b2] dark:from-[#2d5c38] dark:to-[#1e3d28] min-h-[320px] flex flex-col items-center justify-center">
           <BackgroundBeams className="absolute inset-0 h-full w-full opacity-60" />
           <div className="relative z-10 flex flex-col items-center justify-center p-10 text-center">
