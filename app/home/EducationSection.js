@@ -83,36 +83,36 @@ function EducationSection() {
 
           <div className="md:w-1/2 gap-2 p-4 flex items-center justify-center">
             <div className="grid grid-rows-3 grid-cols-3 grid-flow-col gap-4 max-w-[420px] max-h-80 h-full w-full hidden md:grid">
-              <div className="row-span-2 col-span-2 rounded-lg overflow-hidden shadow-md">
+              <div className="row-span-2 col-span-2 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1562774053-701939374585?w=560&q=85"
-                  alt="University campus — MIT World Peace University, Pune"
+                  src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&q=85"
+                  alt="University campus — higher education"
                   width={280}
                   height={213}
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="row-span-2 rounded-lg overflow-hidden shadow-md">
+              <div className="row-span-2 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&q=85"
-                  alt="Modern workspace and learning"
+                  src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&q=85"
+                  alt="Modern library and study"
                   width={140}
                   height={213}
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="col-span-2 col-start-1 row-start-3 rounded-lg overflow-hidden shadow-md">
+              <div className="col-span-2 col-start-1 row-start-3 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?w=560&q=85"
-                  alt="Professional collaboration"
+                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=85"
+                  alt="Professional team collaboration"
                   width={280}
                   height={107}
                   className="h-full w-full object-cover"
                 />
               </div>
-              <div className="rounded-lg overflow-hidden shadow-md">
+              <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1567427017947-907c2808a617?w=400&q=85"
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&q=85"
                   alt="Award and achievement"
                   width={140}
                   height={107}
@@ -130,8 +130,8 @@ function EducationSection() {
             <div className="flex flex-col md:flex-row gap-8 items-center">
               <div className="w-full md:w-1/3 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=85"
-                  alt="Innovation award — professional recognition"
+                  src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=85"
+                  alt="Professional innovation and business growth"
                   width={400}
                   height={300}
                   className="rounded-lg object-cover"
@@ -149,8 +149,8 @@ function EducationSection() {
             <div className="flex flex-col md:flex-row-reverse gap-8 items-center">
               <div className="w-full md:w-1/3 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=85"
-                  alt="Outstanding project — team delivery"
+                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=85"
+                  alt="Team project launch and collaboration"
                   width={400}
                   height={300}
                   className="rounded-lg object-cover"

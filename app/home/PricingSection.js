@@ -18,7 +18,7 @@ function PricingSection() {
               <h3 className="text-lg font-semibold leading-8 text-gray-900 dark:text-white">Basic</h3>
               <p className="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300">Perfect for small projects and quick tasks</p>
               <p className="mt-6 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">₹999</span>
+                <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">₹1,499</span>
                 <span className="text-sm font-semibold leading-6 text-gray-600 dark:text-gray-300">/hour</span>
               </p>
               <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300">
@@ -34,7 +34,7 @@ function PricingSection() {
               <h3 className="text-lg font-semibold leading-8 text-indigo-600 dark:text-indigo-400">Professional</h3>
               <p className="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300">For medium-sized projects and businesses</p>
               <p className="mt-6 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">₹1,999</span>
+                <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">₹2,499</span>
                 <span className="text-sm font-semibold leading-6 text-gray-600 dark:text-gray-300">/hour</span>
               </p>
               <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300">
@@ -52,7 +52,7 @@ function PricingSection() {
               <h3 className="text-lg font-semibold leading-8 text-gray-900 dark:text-white">Enterprise</h3>
               <p className="mt-4 text-sm leading-6 text-gray-600 dark:text-gray-300">For large-scale enterprise solutions</p>
               <p className="mt-6 flex items-baseline gap-x-1">
-                <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">₹3,999</span>
+                <span className="text-4xl font-bold tracking-tight text-gray-900 dark:text-white">₹4,499</span>
                 <span className="text-sm font-semibold leading-6 text-gray-600 dark:text-gray-300">/hour</span>
               </p>
               <ul role="list" className="mt-8 space-y-3 text-sm leading-6 text-gray-600 dark:text-gray-300">

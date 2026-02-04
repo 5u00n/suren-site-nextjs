@@ -1,6 +1,8 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Unica_One } from 'next/font/google';
 
 const unica_one = Unica_One({
@@ -8,7 +10,20 @@ const unica_one = Unica_One({
   weight: '400',
   preload: false,
 });
+
+const navLinkBase =
+  'block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700';
+const navLinkActive =
+  'text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500';
+
 function NavBar() {
+  const pathname = usePathname();
+
+  const isActive = (href) => {
+    if (href === '/') return pathname === '/';
+    return pathname === href || pathname.startsWith(href + '/');
+  };
+
   return (
     <nav className="w-full z-20 top-0 start-0  md:px-16 sm:px-5 xs:px-2">
       <div className=" flex flex-wrap items-center justify-between mx-auto p-4 max-w-[1280px]">
@@ -32,22 +47,47 @@ function NavBar() {
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 font-figtree" id="navbar-sticky">
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border dark:text-white rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0  ">
             <li>
-              <Link href="/" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">
+              <Link
+                href="/"
+                className={`${isActive('/') ? navLinkActive : navLinkBase}`}
+                aria-current={isActive('/') ? 'page' : undefined}
+              >
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link href="/services" className="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              <Link
+                href="/about"
+                className={`${isActive('/about') ? navLinkActive : navLinkBase}`}
+                aria-current={isActive('/about') ? 'page' : undefined}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/services"
+                className={`${isActive('/services') ? navLinkActive : navLinkBase}`}
+                aria-current={isActive('/services') ? 'page' : undefined}
+              >
                 Services
               </Link>
             </li>
             <li>
-              <Link href="/projects" className="block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              <Link
+                href="/projects"
+                className={`${isActive('/projects') ? navLinkActive : navLinkBase}`}
+                aria-current={isActive('/projects') ? 'page' : undefined}
+              >
                 Projects
               </Link>
             </li>
             <li>
-              <Link href="/blogs" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+              <Link
+                href="/blogs"
+                className={`${isActive('/blogs') ? navLinkActive : navLinkBase}`}
+                aria-current={isActive('/blogs') ? 'page' : undefined}
+              >
                 Blog
               </Link>
             </li>
