@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail } from "lucide-react"
 import Link from "next/link"
+import VisitorCounter from "@/components/VisitorCounter"
 
 function Footer() {
   return (
@@ -34,6 +35,7 @@ function Footer() {
             </Link>
             .
           </p>
+          <VisitorCounter />
         </div>
         <div className="flex items-center gap-4">
           <Link href="https://github.com/5u00n" target="_blank" rel="noreferrer">

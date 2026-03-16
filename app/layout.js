@@ -10,6 +10,12 @@ export const metadata = {
   title: "Suren Hembram Portfolio",
   description: "Suren Hembram Portfolio Website for Software Development on Full Stack Web Development, React, Next.js, Node.js, and more.",
   keywords: "Suren Hembram,suren hembram,portfolio , hembram, suren, Full Stack Web Development, React, Next.js, Node.js, Software Development, Web Development, JavaScript",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -17,7 +23,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="description" content={metadata.description} />
-        <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
         <meta name="author" content="Suren Hembram" />
