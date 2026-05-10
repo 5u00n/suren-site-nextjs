@@ -12,7 +12,7 @@ function HeroSection() {
         <div className="relative w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row z-20">
           <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px] xs:mt-4  xs:text-[46px] md:text-[64px] lg:text-[68px] font-gloock font-bold ">
             <TextGenerateEffect duration={2} filter={false} words={`To Code,`} className={"m-0 p-0 border-none"} />
-            <TextGenerateEffect duration={2} filter={false} words={`To Solve Problem,`} />
+            <TextGenerateEffect duration={2} filter={false} words={`To Solve,`} />
             <TextGenerateEffect duration={2} filter={false} words={`To Contribute`} />
           </div>
           <div className="flex items-center justify-center h-full sm:hidden xs:hidden md:flex w-2/5 ">
