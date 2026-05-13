@@ -7,7 +7,7 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 function HeroSection() {
   return (
-    <hero className="relative lg:h-[700px] w-full md:px-16 sm:px-5 xs:px-5 bg-[#F1BABA] dark:bg-transparent pt-9">
+    <hero className="relative lg:h-[700px] w-full md:px-16 sm:px-5 xs:px-5 bg-[#ffe7e7] dark:bg-transparent pt-9">
         <BackgroundBeams className="absolute inset-0 h-full w-full" />
         <div className="relative w-full md:h-3/6 xs:h-2/6 flex justify-between xs:flex-col md:flex-row z-20">
           <div className="flex flex-col justify-center lg:w-3/5 xs:w-full text-[32px] xs:mt-4  xs:text-[46px] md:text-[64px] lg:text-[68px] font-gloock font-bold ">
