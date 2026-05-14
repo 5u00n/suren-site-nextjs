@@ -8,12 +8,45 @@ import {
   GraduationCap,
   Building2,
   Calendar,
+  PenTool,
+  Sparkles,
 } from "lucide-react";
 
 const timelineData = [
   {
+    id:"ssfp",
+    date: "2024 - 2025",
+    title: "Shape Scatterer Figma Plugin",
+    description:
+      "Developed a Figma plugin for creating and managing shape scatter effects in design projects.",
+    status: "completed",
+    icon: PenTool,
+    tag: "Past work",
+  },
+
+  {
+    id: "ems",
+    date: "2025 - 2026",
+    title: "EMS",
+    description:
+      "Building an EMS (Enterprise Management System) — streamlining operations, resource management, and internal tools.",
+    status: "completed",
+    icon: Code2,
+    tag: "Completed",
+  },
+  {
+    id: "edusofthub",
+    date: "2025 - 2026",
+    title: "EduSoftHub",
+    description:
+      "Working on EduSoftHub — an education and software hub to share learning resources, tools, and project insights.",
+    status: "completed",
+    icon: GraduationCap,
+    tag: "Completed",
+  },
+    {
     id: "awr",
-    date: "2024",
+    date: "2024 - 2025",
     title: "AWR Project",
     description:
       "Worked on the AWR (Automated Workflow & Reporting) project — building workflows, reporting pipelines, and automation tooling.",
@@ -22,25 +55,26 @@ const timelineData = [
     tag: "Past work",
   },
   {
-    id: "ems",
-    date: "2025 – Present",
-    title: "EMS",
+    id: "StampInk-Detection",
+    date: "2023 - 2023",
+    title: "Machine Learning Ink Seal detection using YOLO Image Segmentation in python",
     description:
-      "Building an EMS (Enterprise Management System) — streamlining operations, resource management, and internal tools.",
-    status: "in-progress",
-    icon: Code2,
-    tag: "Current",
+      "Implemented a machine learning model using YOLO for image segmentation to detect ink seals in documents, improving accuracy and efficiency in document processing.",
+    status: "completed",
+    icon: Sparkles,
+    tag: "Completed",
   },
   {
-    id: "edusofthub",
-    date: "2025 – Present",
-    title: "EduSoftHub",
+    id: "blog",
+    date: "2024 - Present",
+    title: "Chat-App With Face Recognition",
     description:
-      "Working on EduSoftHub — an education and software hub to share learning resources, tools, and project insights.",
-    status: "in-progress",
-    icon: GraduationCap,
-    tag: "Current",
-  },
+      "Developed a chat application with face recognition capabilities, enhancing user authentication and interaction.",
+    status: "completed",
+    icon: PenTool,
+    tag: "Completed",
+  }
+
 ];
 
 function TimelineItem({ item, isLast }) {

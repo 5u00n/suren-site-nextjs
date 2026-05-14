@@ -23,17 +23,33 @@ const experiences = [
   {
     role: "Computer Science Teacher",
     company: "Eden International School",
-    period: "Nov 2024 – Present",
+    period: "Nov 2024 - March 2026",
     location: "Talegaon, Maharashtra",
     description:
-      "Teaching documents & computer basics (Class 7), core Java programming and critical thinking (Class 8–12).",
+      "Teaching documents & computer basics (Class 7), core Java programming and critical thinking (Class 8-12).",
+  },
+  {
+    role: "Full-stack Developer",
+    company: "Freelance / Personal projects",
+    period: "2019 - Present",
+    location: "Remote",
+    description:
+      "Building web and mobile apps for clients and personal projects. Focus on React, Next.js, Node.js, Python, and cloud services.",    
   },
   {
     role: "Cloud Engineer",
     company: "Cloudnautic",
-    period: "Jan 2023 – Jul 2023",
+    period: "Jan 2023 - Jul 2023",
     location: "Pune, Maharashtra",
     description: "IT Services & Consulting. Cloud and engineering solutions.",
+  },
+  {
+    role: "IT Admin & Support",
+    company: "Spicer Adventist University",
+    period: "Aug 2017 - Dec 2020",
+    location: "Pune, Maharashtra",
+    description:
+      "Managed IT infrastructure, provided technical support, and implemented solutions to enhance campus technology services.",
   },
 ];
 
@@ -41,19 +57,19 @@ const education = [
   {
     degree: "Master of Computer Applications (MCA)",
     school: "MIT World Peace University",
-    period: "2021 – 2023",
+    period: "2021 - 2023",
     detail: "Computer Science · GPA 3.7 / 91%",
   },
   {
     degree: "Bachelor's in Computer Application (BCA)",
     school: "Spicer Adventist University",
-    period: "2017 – 2020",
+    period: "2017 - 2020",
     detail: "Activities: Pathfinder, AV",
   },
   {
     degree: "Higher Secondary, Computer Science",
     school: "DAV Public School Baharagora",
-    period: "2014 – 2016",
+    period: "2014 - 2016",
     detail: "Science Fair Winner 2015 — C++ robot control program",
   },
 ];
