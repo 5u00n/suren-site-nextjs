@@ -22,7 +22,7 @@ function EducationSection() {
             <div className="w-full flex flex-row justify-between mb-2 font-inter">
               <span ><Link className="text-body font-bold underline text-blue-400" href={"https://mitwpu.edu.in"}>MIT World Peace University</Link>
                 <p className="text-sm">Pune, Maharashtra, India</p></span>
-              <span className="text-body px-2 rounded ">2021 - 2022</span>
+              <span className="text-body px-2 rounded ">2021 - 2023</span>
             </div>
             <p className="text-body font-inter">Experiencing Hard Work and learning to be humble, learning from the Administrators from the bottom.</p>
           </div>
@@ -40,7 +40,7 @@ function EducationSection() {
           <div className="w-full">
             <h3 className="font-bold text-heading4 font-figtree">Higher Secondary Certificate</h3>
             <div className="w-full flex flex-row justify-between mb-2 font-inter">
-              <span ><Link className="text-body font-bold underline text-blue-400" href={""}>Irvine Adventist, TPS DAV Public School</Link>
+              <span ><Link className="text-body font-bold underline text-blue-400" href={""}>Irvine Adventist, TPSDAV Public School</Link>
                 <p className="text-sm">Ghatshila, Jharkhand, India</p></span>
               <span className="text-body px-2 rounded ">2004 - 2016</span>
             </div>
